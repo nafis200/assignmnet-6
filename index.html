@@ -74,49 +74,47 @@
   </main>
 
   <main class="container mx-auto mt-5">
+
         <h1 class="text-center text-3xl font-extrabold">Let’s Discuss</h1>
         <p class="font-extralight text-center mt-3">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
         
-        <div>
+         <!-- loader -->
+         <section class="flex justify-center hidden" id ="loader">
+          <span class="loading loading-spinner text-warning w-24"></span>
+        </section>
 
+        <div>
+          <section class="mt-10 flex gap-10 lg:gap-[700px] lg:ml-20">
+            <!-- 1st div -->
+          <div id="div1">
+  
+          </div>
+
+          <!-- 2nd div -->
+            <div class="" id="">
+              <div class="bg-white space-y-4">
+                <div class="flex gap-14" id="title">
+                   <div>
+                      <h1 class="text-2xl font-extrabold">Title</h1>
+                   </div>
+                   <div id="card">
+                     <i class="fa-solid fa-check text-2xl text-green-400"></i>
+                     <span>Mark as Read (<span>0</span>)</span>
+                   </div>
+                </div>
+                <div class="">
+                  <p class="inline">Lorem ipsum dolor sit amet.</p>
+                  <i class="fa-regular fa-eye ml-4"></i>
+                   
+                </div>
+             </div>
+            </div>
+          </section>
         </div>
   </main>
   
-  <section class="mt-10 flex gap-10 lg:gap-[700px] bg-gray-400">
-    <div class="lg:flex bg-gray-200 ml-5 lg:-ml-4">
-      <img src="" class="w-1/8" alt="">
-    <div class="lg:ml-3 lg:p-3 lg:mt-2">
-     <span class="mr-2">#</span><span class="font-extrabold">Music</span>
-     <span class="ml-2">Aurthor:</span><span>Awalad Hossain</span>
-     <p class="lg:text-3xl font-extrabold">World Cup Flags Football</p>
-     <p>you get different flag of different country <br> so buy it hurry up</p>
-     <hr class="mt-2"><hr>
-     <span><i class="fa-regular fa-message"></i> <span class="ml-1">560</span> </span>
-     <span class="ml-1"><i class="fa-regular fa-eye"></i><span class="ml-1">1350</span></span>
-     <span class="ml-1"><i class="fa-regular fa-clock"></i><span class="ml-1">5</span></span>
-     <span class="lg:ml-20 ml-8"><img src="../message.svg" class="rounded-3xl p-2 bg-green-400 inline" alt=""></span>
-    </div>
-    </div>
-    <div class="">
-      <div class="bg-white space-y-4">
-        <div class="flex gap-14">
-           <div>
-              <h1 class="text-2xl font-extrabold">Title</h1>
-           </div>
-           <div>
-             <i class="fa-solid fa-check text-2xl text-green-400"></i>
-             <span>Mark as Read (<span>0</span>)</span>
-           </div>
-        </div>
-        <div class="min-h-screen">
-          <p class="inline">Lorem ipsum dolor sit amet.</p>
-          <i class="fa-regular fa-eye ml-4"></i>
-           
-        </div>
-     </div>
-    </div>
-  </section>
-
+  
+<script src="index.js"></script>
 </body>
 </html>
 
