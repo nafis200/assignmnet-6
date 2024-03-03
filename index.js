@@ -5,7 +5,8 @@ const Load = async(str = "")=>{
    const url = ` https://openapi.programming-hero.com/api/retro-forum/posts?category=${str}`
    const res = await fetch(url)
    const data = await res.json()
-   DisplayData(data.posts)
+   console.log(data.posts);
+    DisplayData(data.posts)
 }
 
 const DisplayData = (datas)=>{
@@ -18,8 +19,8 @@ setTimeout(()=>{
     datas.forEach(data=>{
         const div = document.createElement('div')
          div.innerHTML = `
-         <div class="lg:flex bg-gray-200 ml-5 lg:-ml-4">
-         <img src="" class="w-1/8" alt="">
+         <div class="lg:flex bg-gray-200 ml-5 lg:ml-4 mt-2">
+         <img src="${data.image}" class="w-[150px] h-[150px] lg:p-4" alt="">
        <div class="lg:ml-3 lg:p-3 lg:mt-2">
         <span class="mr-2">#</span><span class="font-extrabold">Music</span>
         <span class="ml-2">Aurthor:</span><span>Awalad Hossain</span>
@@ -32,7 +33,7 @@ setTimeout(()=>{
         <span class="lg:ml-20 ml-8"><img src="../message.svg" class="rounded-3xl p-2 bg-green-400 inline" alt=""></span>
        </div>
        </div>
-         `
+     `
          div1.appendChild(div)
     })
 },1000)
