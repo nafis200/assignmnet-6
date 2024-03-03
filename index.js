@@ -1,4 +1,5 @@
 let count = 0;
+let cnt = 0;
 
 const Load = async(str = "", ok = true)=>{
    console.log('hi');
@@ -7,7 +8,7 @@ const Load = async(str = "", ok = true)=>{
    const data = await res.json()
    console.log(data.posts);
    console.log(data.posts[0].author.name);
-//    DisplayData(data.posts)
+   DisplayData(data.posts)
 }
 
 const Call = (id)=>{
@@ -30,17 +31,23 @@ const Call = (id)=>{
      
 }
 
+
 const DisplayData = (datas)=>{
     toggleSpinner(true)
     setTimeout(()=>{
        toggleSpinner(false)
     },2000)
     const div1 = document.getElementById('div1')
+    const div5 = document.getElementById('div5')
 setTimeout(()=>{
     datas.forEach(data=>{
         const div = document.createElement('div')
+        const div13 = document.createElement('div')
          div.innerHTML = `
          <div class="lg:flex bg-gray-200 ml-5 lg:ml-4 mt-2">
+            <div class="w-[20px] h-[20px] ${data.isActive ? 'bg-green-400': 'bg-red-300'} rounded-2xl inline relative bottom-[] left-[150px] top-[10px] ">
+            </div>
+          
          <img src="${data.image}" class="w-[150px] h-[150px] lg:p-4" alt="">
        <div class="lg:ml-3 lg:p-3 lg:mt-2">
         <span class="mr-2">#</span><span class="font-extrabold">${data.category}</span>
@@ -55,6 +62,7 @@ setTimeout(()=>{
        </div>
        </div>
      `
+        
          div1.appendChild(div)
     })
 },1000)
