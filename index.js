@@ -7,7 +7,7 @@ const Load = async(str = "", ok = true)=>{
    const data = await res.json()
    console.log(data.posts);
    console.log(data.posts[0].author.name);
-   DisplayData(data.posts)
+//    DisplayData(data.posts)
 }
 
 const Call = (id)=>{
