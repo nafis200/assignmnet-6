@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <header class="container mx-auto">
+  <header class="container mx-auto ">
    <nav class="lg:ml-14">
     <div class="navbar bg-base-100">
       <span><img src="logo.png" class="mt-2" alt=""></span>
@@ -22,30 +22,32 @@
           </div>
           <ul tabindex="0" class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
-            <li><span class=""><img class="text-6xl" src="../home_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
-            <li><span><img src="../edit_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
-            <li><span><img src="../group_add_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+            <li class="tooltip tooltip-bottom" data-tip="Home"><span class=""><img class="text-6xl" src="../home_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+            <li class="tooltip tooltip-bottom" data-tip="pencil"><span><img src="../edit_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+            <li class="tooltip tooltip-bottom" data-tip="man"><span><img src="../group_add_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+            <li class="tooltip tooltip-bottom" data-tip="flag"><span><img src="../group_add_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
             <li><span><img src="../flag_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
-            <li><button class="btn bg-purple-700 text-white p-4">Sign In</button>
-              <li>
+            <li><button class="btn bg-purple-700 text-white p-4">Sign In</button><li>
+            
           </ul>
         </div>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal ">
-          <li><span class="rounded-full"><img src="../home_FILL0_wght400_GRAD0_opsz24.svg" class="h-6" alt=""></span></li>
-          <li><span><img src="../edit_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
-          <li><span><img src="../group_add_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
-          <li><span><img src="../flag_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+          <li class="tooltip tooltip-bottom" data-tip="Home" ><span class="rounded-full"><img src="../home_FILL0_wght400_GRAD0_opsz24.svg" class="h-6" alt=""></span></li>
+          <li class="tooltip tooltip-bottom" data-tip="pencil"><span><img src="../edit_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+          <li class="tooltip tooltip-bottom" data-tip="man"><span><img src="../group_add_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
+          <li class="tooltip tooltip-bottom" data-tip="flag"><span><img src="../flag_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span></li>
           <li><button class="btn bg-purple-700 text-white p-4">Sign in</button>
           </li>
+      
         </ul>
       </div>
     </div>
    </nav>
   </header>
 
-  <body class="container mx-auto">
+  <main class="container mx-auto">
     <div class="bg-[url('banner.png')] bg-no-repeat h-96  bg-black w-[470px] lg:ml-20  lg:w-[1330px] mt-6">
       <!-- ... -->
       <section class="flex flex-1 lg:p-14">
@@ -68,7 +70,13 @@
         </div>
       </section>
     </div>
-  </body>
+  </main>
+
+  <main class="container mx-auto mt-5">
+        <h1 class="text-center text-3xl font-extrabold">Let’s Discuss</h1>
+        <p class="font-extralight text-center mt-3">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+  </main>
+  
 
 </body>
 </html>
