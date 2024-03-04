@@ -7,7 +7,6 @@ const Load = async(str = "", ok = true)=>{
    const res = await fetch(url)
    const data = await res.json()
    console.log(data.posts);
-   console.log(data.posts[0].author.name);
    DisplayData(data.posts)
 }
 
@@ -39,6 +38,7 @@ const DisplayData = (datas)=>{
     },2000)
     const div1 = document.getElementById('div1')
     const div5 = document.getElementById('div5')
+    div1.textContent = ' ';
 setTimeout(()=>{
     datas.forEach(data=>{
         const div = document.createElement('div')
@@ -79,3 +79,11 @@ const toggleSpinner = isLoading =>{
     }
 }
 Load()
+
+const Search = ()=>{
+        const searchbar = document.getElementById('searchbar')
+        const Value = searchbar.value
+        console.log(Value)
+        Load(Value)
+
+}
