@@ -85,5 +85,4 @@ const Search = ()=>{
         const Value = searchbar.value
         console.log(Value)
         Load(Value)
-
 }
