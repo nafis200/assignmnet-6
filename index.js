@@ -78,7 +78,7 @@ const toggleSpinner = isLoading =>{
         Loader.classList.add('hidden')
     }
 }
-// Load()
+Load()
 
 const Search = ()=>{
         const searchbar = document.getElementById('searchbar')
